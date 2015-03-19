@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06BE9C5C1ABA86DC0074C95F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C5B1ABA86DC0074C95F /* main.m */; };
+		06BE9C5F1ABA86DC0074C95F /* STPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C5E1ABA86DC0074C95F /* STPAppDelegate.m */; };
+		06BE9C671ABA86DC0074C95F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BE9C661ABA86DC0074C95F /* Images.xcassets */; };
+		06BE9C6A1ABA86DC0074C95F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BE9C681ABA86DC0074C95F /* LaunchScreen.xib */; };
+		06BE9C871ABA874A0074C95F /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C821ABA874A0074C95F /* SimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06BE9C881ABA874A0074C95F /* STDDebugPingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C841ABA874A0074C95F /* STDDebugPingViewController.m */; };
+		06BE9C891ABA874A0074C95F /* STDPingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C861ABA874A0074C95F /* STDPingServices.m */; };
+		06BE9C8C1ABA87A50074C95F /* STDebugFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C8B1ABA87A50074C95F /* STDebugFoundation.m */; };
+		06BE9C911ABA881A0074C95F /* STKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BE9C901ABA881A0074C95F /* STKit.framework */; };
+		06BE9C931ABA88A70074C95F /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BE9C921ABA88A70074C95F /* libz.1.2.5.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06BE9C561ABA86DC0074C95F /* STPingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STPingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BE9C5A1ABA86DC0074C95F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BE9C5B1ABA86DC0074C95F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06BE9C5D1ABA86DC0074C95F /* STPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPAppDelegate.h; sourceTree = "<group>"; };
+		06BE9C5E1ABA86DC0074C95F /* STPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPAppDelegate.m; sourceTree = "<group>"; };
+		06BE9C661ABA86DC0074C95F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06BE9C691ABA86DC0074C95F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		06BE9C811ABA874A0074C95F /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		06BE9C821ABA874A0074C95F /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		06BE9C831ABA874A0074C95F /* STDDebugPingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDDebugPingViewController.h; sourceTree = "<group>"; };
+		06BE9C841ABA874A0074C95F /* STDDebugPingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDDebugPingViewController.m; sourceTree = "<group>"; };
+		06BE9C851ABA874A0074C95F /* STDPingServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDPingServices.h; sourceTree = "<group>"; };
+		06BE9C861ABA874A0074C95F /* STDPingServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDPingServices.m; sourceTree = "<group>"; };
+		06BE9C8A1ABA87A50074C95F /* STDebugFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDebugFoundation.h; sourceTree = "<group>"; };
+		06BE9C8B1ABA87A50074C95F /* STDebugFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDebugFoundation.m; sourceTree = "<group>"; };
+		06BE9C901ABA881A0074C95F /* STKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STKit.framework; sourceTree = "<group>"; };
+		06BE9C921ABA88A70074C95F /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06BE9C531ABA86DC0074C95F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BE9C931ABA88A70074C95F /* libz.1.2.5.dylib in Frameworks */,
+				06BE9C911ABA881A0074C95F /* STKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BE9C4D1ABA86DC0074C95F = {
+			isa = PBXGroup;
+			children = (
+				06BE9C921ABA88A70074C95F /* libz.1.2.5.dylib */,
+				06BE9C581ABA86DC0074C95F /* STPingTest */,
+				06BE9C571ABA86DC0074C95F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06BE9C571ABA86DC0074C95F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06BE9C561ABA86DC0074C95F /* STPingTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06BE9C581ABA86DC0074C95F /* STPingTest */ = {
+			isa = PBXGroup;
+			children = (
+				06BE9C7F1ABA874A0074C95F /* Classes */,
+				06BE9C5D1ABA86DC0074C95F /* STPAppDelegate.h */,
+				06BE9C5E1ABA86DC0074C95F /* STPAppDelegate.m */,
+				06BE9C661ABA86DC0074C95F /* Images.xcassets */,
+				06BE9C681ABA86DC0074C95F /* LaunchScreen.xib */,
+				06BE9C591ABA86DC0074C95F /* Supporting Files */,
+			);
+			path = STPingTest;
+			sourceTree = "<group>";
+		};
+		06BE9C591ABA86DC0074C95F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06BE9C5A1ABA86DC0074C95F /* Info.plist */,
+				06BE9C5B1ABA86DC0074C95F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06BE9C7F1ABA874A0074C95F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				06BE9C901ABA881A0074C95F /* STKit.framework */,
+				06BE9C801ABA874A0074C95F /* PingTester */,
+				06BE9C851ABA874A0074C95F /* STDPingServices.h */,
+				06BE9C861ABA874A0074C95F /* STDPingServices.m */,
+				06BE9C8A1ABA87A50074C95F /* STDebugFoundation.h */,
+				06BE9C8B1ABA87A50074C95F /* STDebugFoundation.m */,
+				06BE9C831ABA874A0074C95F /* STDDebugPingViewController.h */,
+				06BE9C841ABA874A0074C95F /* STDDebugPingViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		06BE9C801ABA874A0074C95F /* PingTester */ = {
+			isa = PBXGroup;
+			children = (
+				06BE9C811ABA874A0074C95F /* SimplePing.h */,
+				06BE9C821ABA874A0074C95F /* SimplePing.m */,
+			);
+			path = PingTester;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06BE9C551ABA86DC0074C95F /* STPingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BE9C791ABA86DC0074C95F /* Build configuration list for PBXNativeTarget "STPingTest" */;
+			buildPhases = (
+				06BE9C521ABA86DC0074C95F /* Sources */,
+				06BE9C531ABA86DC0074C95F /* Frameworks */,
+				06BE9C541ABA86DC0074C95F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STPingTest;
+			productName = STPingTest;
+			productReference = 06BE9C561ABA86DC0074C95F /* STPingTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06BE9C4E1ABA86DC0074C95F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Suen;
+				TargetAttributes = {
+					06BE9C551ABA86DC0074C95F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 06BE9C511ABA86DC0074C95F /* Build configuration list for PBXProject "STPingTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06BE9C4D1ABA86DC0074C95F;
+			productRefGroup = 06BE9C571ABA86DC0074C95F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06BE9C551ABA86DC0074C95F /* STPingTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06BE9C541ABA86DC0074C95F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BE9C6A1ABA86DC0074C95F /* LaunchScreen.xib in Resources */,
+				06BE9C671ABA86DC0074C95F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06BE9C521ABA86DC0074C95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BE9C871ABA874A0074C95F /* SimplePing.m in Sources */,
+				06BE9C5F1ABA86DC0074C95F /* STPAppDelegate.m in Sources */,
+				06BE9C881ABA874A0074C95F /* STDDebugPingViewController.m in Sources */,
+				06BE9C891ABA874A0074C95F /* STDPingServices.m in Sources */,
+				06BE9C5C1ABA86DC0074C95F /* main.m in Sources */,
+				06BE9C8C1ABA87A50074C95F /* STDebugFoundation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06BE9C681ABA86DC0074C95F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BE9C691ABA86DC0074C95F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06BE9C771ABA86DC0074C95F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06BE9C781ABA86DC0074C95F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06BE9C7A1ABA86DC0074C95F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STPingTest/Classes",
+				);
+				INFOPLIST_FILE = STPingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		06BE9C7B1ABA86DC0074C95F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STPingTest/Classes",
+				);
+				INFOPLIST_FILE = STPingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06BE9C511ABA86DC0074C95F /* Build configuration list for PBXProject "STPingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BE9C771ABA86DC0074C95F /* Debug */,
+				06BE9C781ABA86DC0074C95F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BE9C791ABA86DC0074C95F /* Build configuration list for PBXNativeTarget "STPingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BE9C7A1ABA86DC0074C95F /* Debug */,
+				06BE9C7B1ABA86DC0074C95F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06BE9C4E1ABA86DC0074C95F /* Project object */;
+}
