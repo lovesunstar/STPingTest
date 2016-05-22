@@ -24,7 +24,7 @@
 }
 
 + (NSString *)statisticsWithPingItems:(NSArray *)pingItems {
-    //    --- baidu.com ping statistics ---
+    //    --- ping statistics ---
     //    5 packets transmitted, 5 packets received, 0.0% packet loss
     //    round-trip min/avg/max/stddev = 4.445/9.496/12.210/2.832 ms
     NSString *address = [pingItems.firstObject originalAddress];
@@ -124,13 +124,14 @@
 }
 
 - (void)cancel {
+    [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(_timeoutActionFired) object:nil];
     [self.simplePing stop];
     STDPingItem *pingItem = [[STDPingItem alloc] init];
     pingItem.status = STDPingStatusFinished;
+    
     if (self.callbackHandler) {
         self.callbackHandler(pingItem, [_pingItems copy]);
     }
-    [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(_timeoutActionFired) object:nil];
 }
 
 - (void)simplePing:(SimplePing *)pinger didStartWithAddress:(NSData *)address {

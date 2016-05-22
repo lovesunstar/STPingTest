@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 SunJiangting. All rights reserved.
 //
 
-#import <STKit/STKit.h>
+#import <UIKit/UIKit.h>
 
-@interface STDDebugPingViewController : STViewController
+@interface STDDebugPingViewController : UIViewController
 
 @end

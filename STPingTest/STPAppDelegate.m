@@ -7,7 +7,6 @@
 //
 
 #import "STPAppDelegate.h"
-#import <STKit/STKit.h>
 #import "STDDebugPingViewController.h"
 
 @interface STPAppDelegate ()
@@ -22,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     STDDebugPingViewController *pingViewController = [[STDDebugPingViewController alloc] init];
-    STNavigationController *navigationController = [[STNavigationController alloc] initWithRootViewController:pingViewController];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:pingViewController];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;

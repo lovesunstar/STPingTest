@@ -15,7 +15,6 @@
 		06BE9C881ABA874A0074C95F /* STDDebugPingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C841ABA874A0074C95F /* STDDebugPingViewController.m */; };
 		06BE9C891ABA874A0074C95F /* STDPingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C861ABA874A0074C95F /* STDPingServices.m */; };
 		06BE9C8C1ABA87A50074C95F /* STDebugFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C8B1ABA87A50074C95F /* STDebugFoundation.m */; };
-		06BE9C911ABA881A0074C95F /* STKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BE9C901ABA881A0074C95F /* STKit.framework */; };
 		06BE9C931ABA88A70074C95F /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BE9C921ABA88A70074C95F /* libz.1.2.5.dylib */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		06BE9C861ABA874A0074C95F /* STDPingServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDPingServices.m; sourceTree = "<group>"; };
 		06BE9C8A1ABA87A50074C95F /* STDebugFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDebugFoundation.h; sourceTree = "<group>"; };
 		06BE9C8B1ABA87A50074C95F /* STDebugFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDebugFoundation.m; sourceTree = "<group>"; };
-		06BE9C901ABA881A0074C95F /* STKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STKit.framework; sourceTree = "<group>"; };
 		06BE9C921ABA88A70074C95F /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -45,7 +43,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BE9C931ABA88A70074C95F /* libz.1.2.5.dylib in Frameworks */,
-				06BE9C911ABA881A0074C95F /* STKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +91,6 @@
 		06BE9C7F1ABA874A0074C95F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				06BE9C901ABA881A0074C95F /* STKit.framework */,
 				06BE9C801ABA874A0074C95F /* PingTester */,
 				06BE9C851ABA874A0074C95F /* STDPingServices.h */,
 				06BE9C861ABA874A0074C95F /* STDPingServices.m */,
@@ -330,6 +326,7 @@
 				06BE9C7B1ABA86DC0074C95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
