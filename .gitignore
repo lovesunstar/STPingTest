@@ -1,0 +1,9 @@
+*.pbxuser
+*.mode1v3
+*.DS_Store
+*.xcuserdata*
+xcuserdata*
+*.xcuserdata*
+.gitattributes
+*xcuserdata*
+*.xccheckout

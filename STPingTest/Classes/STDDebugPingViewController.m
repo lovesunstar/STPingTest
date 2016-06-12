@@ -48,7 +48,7 @@
     goButton.tag = 10001;
     [self.view addSubview:goButton];
     
-    self.textView = [[STDebugTextView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.textField.frame) + 10, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - CGRectGetMaxY(self.textField.frame) - 20)];
+    self.textView = [[STDebugTextView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.textField.frame) + 10, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - CGRectGetMaxY(self.textField.frame) - 10)];
     self.textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.textView.editable = NO;
     [self.view addSubview:self.textView];

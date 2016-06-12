@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import "SimplePing.h"
+#import "STSimplePing.h"
 
 typedef NS_ENUM(NSInteger, STDPingStatus) {
     STDPingStatusDidStart,
+    STDPingStatusDidFailToSendPacket,
     STDPingStatusDidReceivePacket,
+    STDPingStatusDidReceiveUnexpectedPacket,
     STDPingStatusDidTimeout,
+    STDPingStatusError,
     STDPingStatusFinished,
 };
 

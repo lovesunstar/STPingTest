@@ -11,7 +11,7 @@
 		06BE9C5F1ABA86DC0074C95F /* STPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C5E1ABA86DC0074C95F /* STPAppDelegate.m */; };
 		06BE9C671ABA86DC0074C95F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BE9C661ABA86DC0074C95F /* Images.xcassets */; };
 		06BE9C6A1ABA86DC0074C95F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BE9C681ABA86DC0074C95F /* LaunchScreen.xib */; };
-		06BE9C871ABA874A0074C95F /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C821ABA874A0074C95F /* SimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06BE9C871ABA874A0074C95F /* STSimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C821ABA874A0074C95F /* STSimplePing.m */; };
 		06BE9C881ABA874A0074C95F /* STDDebugPingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C841ABA874A0074C95F /* STDDebugPingViewController.m */; };
 		06BE9C891ABA874A0074C95F /* STDPingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C861ABA874A0074C95F /* STDPingServices.m */; };
 		06BE9C8C1ABA87A50074C95F /* STDebugFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE9C8B1ABA87A50074C95F /* STDebugFoundation.m */; };
@@ -26,8 +26,8 @@
 		06BE9C5E1ABA86DC0074C95F /* STPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPAppDelegate.m; sourceTree = "<group>"; };
 		06BE9C661ABA86DC0074C95F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		06BE9C691ABA86DC0074C95F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		06BE9C811ABA874A0074C95F /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		06BE9C821ABA874A0074C95F /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		06BE9C811ABA874A0074C95F /* STSimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSimplePing.h; sourceTree = "<group>"; };
+		06BE9C821ABA874A0074C95F /* STSimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSimplePing.m; sourceTree = "<group>"; };
 		06BE9C831ABA874A0074C95F /* STDDebugPingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDDebugPingViewController.h; sourceTree = "<group>"; };
 		06BE9C841ABA874A0074C95F /* STDDebugPingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDDebugPingViewController.m; sourceTree = "<group>"; };
 		06BE9C851ABA874A0074C95F /* STDPingServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDPingServices.h; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 		06BE9C801ABA874A0074C95F /* PingTester */ = {
 			isa = PBXGroup;
 			children = (
-				06BE9C811ABA874A0074C95F /* SimplePing.h */,
-				06BE9C821ABA874A0074C95F /* SimplePing.m */,
+				06BE9C811ABA874A0074C95F /* STSimplePing.h */,
+				06BE9C821ABA874A0074C95F /* STSimplePing.m */,
 			);
 			path = PingTester;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 		06BE9C4E1ABA86DC0074C95F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Suen;
 				TargetAttributes = {
 					06BE9C551ABA86DC0074C95F = {
@@ -180,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06BE9C871ABA874A0074C95F /* SimplePing.m in Sources */,
+				06BE9C871ABA874A0074C95F /* STSimplePing.m in Sources */,
 				06BE9C5F1ABA86DC0074C95F /* STPAppDelegate.m in Sources */,
 				06BE9C881ABA874A0074C95F /* STDDebugPingViewController.m in Sources */,
 				06BE9C891ABA874A0074C95F /* STDPingServices.m in Sources */,
@@ -223,6 +223,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -289,6 +290,7 @@
 				);
 				INFOPLIST_FILE = STPingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -303,6 +305,7 @@
 				);
 				INFOPLIST_FILE = STPingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
